@@ -1,0 +1,74 @@
+*{
+padding: 0%;
+margin: 0%;
+box-sizing: border-box;
+}
+body{
+background-image: url("https://cdn.pixabay.com/photo/2018/01/11/21/27/desk-3076954__340.jpg");
+background-size: cover;
+background-position: center;
+height:75vh ;
+}
+.menubar{
+ background: orchid;
+ text-align: center;
+}
+.menubar ul{
+  display: inline-flex;
+  list-style: none;
+}
+.menubar ul li{
+ width: 130px;
+ margin: 10px;
+padding: 15px;
+}
+.menubar ul li {
+ text-decoration: none;
+color: black;
+font-family: century;
+font-size: 18px;
+}
+.active {
+ background: rgb(211, 203, 204);
+border-radius: 3px;
+}
+.menubar ul li:hover
+{
+  color: white;
+ background: rgb(211, 203, 204);
+border-radius: 3px;
+}
+.menubar .fa
+{
+margin-right:4px; 
+}
+.sub-menubar
+{
+  display: none;
+}
+.menubar ul li:hover .sub-menubar
+{
+ display: block;
+position: absolute;
+background: orchid;
+margin-top: 18px;
+margin-left: -25px;
+}
+.menubar ul li:hover .sub-menubar ul 
+{
+ display: block;
+ margin: 8px;
+}
+.menubar ul li:hover .sub-menubar ul li
+{
+  border-bottom: 1px dotted black;
+text-align: left;
+}
+.menubar ul li:hover .sub-menubar ul li:last-child
+{
+border-bottom: none;
+}
+
+
+
+
